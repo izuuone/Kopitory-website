@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KOPITORY Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header & Navigation -->
+    <header class="header">
+      <nav class="navbar">
+        <div class="nav-container">
+          <div class="logo">
+            <img src="Image/Logo-Orang-Fiks.png" alt="logo" class="logo" />
+            <h2>KOPITORY</h2>
+          </div>
+          <ul class="nav-menu">
+            <li class="nav-item">
+              <a href="#home" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link">Tentang</a>
+            </li>
+            <li class="nav-item">
+              <a href="#products" class="nav-link">Produk</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">Kontak</a>
+            </li>
+          </ul>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-container">
+        <div class="hero-content">
+          <h1 class="hero-title">KOPITORY</h1>
+          <p class="hero-subtitle">
+            "Dari Kopi, Jadi Cerita di Setiap Tegukan."
+          </p>
+          <a href="#products" class="cta-button">Lihat Produk Kami</a>
+        </div>
+        <div class="hero-image">
+          <img src="Image/Our-Product.png" alt="Kopi KOPITORY" />
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <h2 class="section-title">Tentang KOPITORY</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <p>
+              KOPITORY adalah sebuah brand yang berawal dari dua orang mahasiswa
+              dengan modal nekat. Berkeinginan mendirikan usaha sendiri dengan
+              tujuan agar orang - orang bisa menikmati kopi dengan harga
+              terjangkau.
+            </p>
+            <table class="info-table">
+              <tr>
+                <td><strong>Didirikan</strong></td>
+                <td>2026</td>
+              </tr>
+              <tr>
+                <td><strong>Produk Utama</strong></td>
+                <td>Coffee & Non Coffee</td>
+              </tr>
+              <tr>
+                <td><strong>Wilayah</strong></td>
+                <td>Bandung</td>
+              </tr>
+            </table>
+          </div>
+          <div class="about-image">
+            <img src="Image/Kopitory Feed.png" alt="KOPITORY" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+      <div class="container">
+        <h2 class="section-title">Produk Unggulan</h2>
+        <div class="products-grid">
+          <div class="product-card">
+            <img src="Image/Kopitory-Cokelat.png" alt="Kopitory-Cokelat" />
+            <h3>Kopitory Cokelat Oreo</h3>
+            <p>
+              "Es cokelat yang menyegarkan di setiap tegukannya dengan Oreo
+              sebagai topping serta cream Oreo yang menyatu membrikan rasa yang
+              nikmat."
+            </p>
+            <span class="price">Rp 15.000</span>
+          </div>
+          <div class="product-card">
+            <img src="Image/Kopitory-Latte.png" alt="Kopitory-Latte" />
+            <h3>Kopitory Latte</h3>
+            <p>
+              "Perpaduan kopi dan susu dalam racikan latte yang lembut,
+              menciptakan rasa yang ringan dan mudah dinikmati. Pas untuk
+              menemani momen santai, ngobrol, atau sekedar menikmati waktu
+              sendiri."
+            </p>
+            <span class="price">Rp 15.000</span>
+          </div>
+          <div class="product-card">
+            <img src="Image/Kopitory-Orange.png" alt="Kopitory-Orange" />
+            <h3>Kopitory Orange</h3>
+            <p>
+              “Kopi dengan sentuhan orange yang menyegarkan, menciptakan rasa
+              unik yang ringan dan mudah dinikmati. Pilihan pas untuk kamu yang
+              ingin ngopi dengan suasana yang lebih fresh.”
+            </p>
+            <span class="price">Rp 12.000</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2 class="section-title">Hubungi Kami</h2>
+        <div class="contact-content">
+          <div class="contact-info">
+            <h3>KOPITORY Coffee</h3>
+            <p>
+              <strong>Alamat:</strong> Jl. Pasirleutik No. 9 Kota Bandung,
+              (Sandrina Collections), Bandung 40125
+            </p>
+            <p><strong>Instagram:</strong> @kopi.tory</p>
+            <p><strong>Email:</strong> kopitoryy@gmail.com</p>
+          </div>
+          <form class="contact-form">
+            <input type="text" placeholder="Nama Lengkap" required />
+            <input type="email" placeholder="Email" required />
+            <textarea placeholder="Pesan Anda" rows="5" required></textarea>
+            <button type="submit" class="cta-button">Kirim Pesan</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2026 KOPITORY. Semua orang memiliki cerita.</p>
+      </div>
+    </footer>
+
+    <script>
+      // Simple mobile menu toggle
+      const hamburger = document.querySelector(".hamburger");
+      const navMenu = document.querySelector(".nav-menu");
+
+      hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
